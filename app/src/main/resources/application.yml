@@ -1,0 +1,17 @@
+currency:
+  available:
+    - "RUB"
+cost:
+  rub:
+    perKg: 400
+    minimal: 350
+    perVolume: 100000
+
+coordinate:
+  maxLatitude: 65
+  minLatitude: 45
+  maxLongitude: 96
+  minLongitude: 30
+
+distance:
+  baseLimit: 450

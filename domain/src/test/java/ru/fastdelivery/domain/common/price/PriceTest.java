@@ -52,4 +52,14 @@ class PriceTest {
         assertThatThrownBy(() -> price.max(moreThanPrice))
                 .isInstanceOf(IllegalArgumentException.class);
     }
+
+    @Test
+    void roundToCentTest() {
+        var price = new Price(new BigDecimal("383.3333"), currency);
+        var expected = new BigDecimal("383.34");
+        BigDecimal actual = price.roundToCent().amount();
+
+        assertThat(actual).isEqualTo(expected);
+
+    }
 }

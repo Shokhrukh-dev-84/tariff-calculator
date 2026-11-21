@@ -30,6 +30,6 @@ public record Price(
     }
 
     public Price roundToCent() {
-        return new Price(this.amount.setScale(2, RoundingMode.HALF_UP), currency);
+        return new Price(this.amount.setScale(2, RoundingMode.UP), currency);
     }
 }

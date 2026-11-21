@@ -18,6 +18,6 @@ public class DistanceProperties implements DistancePropertiesProvider {
         if (distance == null) {
             throw new IllegalArgumentException("Distance cannot be null");
         }
-        return distance > baseLimit ? distance / baseLimit : 0.1;
+        return distance > baseLimit ? distance / baseLimit : 1.0;
     }
 }
